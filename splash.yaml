@@ -1,0 +1,17 @@
+# @format
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  color_dark: "#272727"
+  image: assets/logos/ic_launcher.png
+  iamge_dark: assets/logos/ic_launcher.png
+
+  android_12:
+    color: "#FFFFFF"
+    color_dark: "#272727"
+    image: assets/logos/ic_launcher.png
+    iamge_dark: assets/logos/ic_launcher.png
+
+  web: false
+# flutter pub run flutter_native_splash:create --path=splash.yaml
+# flutter pub run flutter_native_splash:remove
