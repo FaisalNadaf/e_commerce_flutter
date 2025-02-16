@@ -1,3 +1,4 @@
+import 'package:e_commerce/features/authentication/controllers.onboarding/onboarding_controller.dart';
 import 'package:e_commerce/features/authentication/screens/widgets/OnBoardingDotNavigation.dart';
 import 'package:e_commerce/features/authentication/screens/widgets/OnBoardingNextButton.dart';
 import 'package:e_commerce/features/authentication/screens/widgets/onBoardingSkipButton.dart';
@@ -5,9 +6,12 @@ import 'package:e_commerce/features/authentication/screens/widgets/onBoardingWid
 import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Onboarding extends StatelessWidget {
-  const Onboarding({super.key});
+  Onboarding({super.key});
+
+  final controller = Get.put(OnboardingController());
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +19,8 @@ class Onboarding extends StatelessWidget {
       body: Stack(
         children: [
           PageView(
+            controller: controller.pageController,
+            onPageChanged: (index) => controller.updatePageIndicator,
             children: const [
               onBoardingWidget(
                 image: TImages.onBoardingImage1,
@@ -36,9 +42,9 @@ class Onboarding extends StatelessWidget {
 // skip button
           onBoardingSkipButton(),
 
-          const OnBoardingDotNavigation(),
+          OnBoardingDotNavigation(),
 
-          const OnBoardingNextButton(),
+          OnBoardingNextButton(),
         ],
       ),
     );

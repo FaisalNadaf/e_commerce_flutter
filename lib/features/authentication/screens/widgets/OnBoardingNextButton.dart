@@ -1,3 +1,4 @@
+import 'package:e_commerce/features/authentication/controllers.onboarding/onboarding_controller.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/device/device_utility.dart';
 import 'package:e_commerce/utils/helpers/helper_functions.dart';
@@ -22,7 +23,9 @@ class OnBoardingNextButton extends StatelessWidget {
           backgroundColor: dark ? TColors.primary : TColors.dark,
           shape: const CircleBorder(),
         ),
-        onPressed: () {},
+        onPressed: () {
+          OnboardingController.instance.nextPage();
+        },
         child: const Icon(Icons.arrow_forward),
       ),
     );
