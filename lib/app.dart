@@ -1,3 +1,4 @@
+import 'package:e_commerce/features/authentication/screens/login/login.dart';
 import 'package:e_commerce/features/authentication/screens/onboarding_page.dart/onboarding.dart';
 import 'package:e_commerce/utils/constants/text_strings.dart';
 import 'package:e_commerce/utils/theme/theme.dart';
@@ -16,7 +17,8 @@ class App extends StatelessWidget {
       darkTheme: TAppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
       // initialBinding: GeneralBindings(),
-      home: Onboarding(),
+      // home: Onboarding(),
+      home: Login(),
     );
   }
 }
