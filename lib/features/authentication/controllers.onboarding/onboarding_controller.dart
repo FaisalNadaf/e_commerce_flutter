@@ -11,7 +11,7 @@ class OnboardingController extends GetxController {
 
   void dotNavigationClick(index) {
     currentPage.value = index;
-    pageController.jumpTo(index);
+    pageController.jumpToPage(index);
   }
 
   void nextPage() {
@@ -22,6 +22,7 @@ class OnboardingController extends GetxController {
     } else {
       int page = currentPage.value + 1;
       pageController.jumpToPage(page);
+      currentPage.value = page;
     }
   }
 
