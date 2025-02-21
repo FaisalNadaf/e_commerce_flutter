@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:e_commerce/common/styles/spacing_styles.dart';
-import 'package:e_commerce/common/widgets/form_divider.dart';
-import 'package:e_commerce/common/widgets/social_buttons.dart';
+import 'package:e_commerce/common/widgets.login_signup/form_divider.dart';
+import 'package:e_commerce/common/widgets.login_signup/social_buttons.dart';
 import 'package:e_commerce/features/authentication/screens/login/widgets/login_form.dart';
 import 'package:e_commerce/features/authentication/screens/login/widgets/login_header.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
@@ -17,16 +17,18 @@ class Login extends StatelessWidget {
     THelperFunctions.isDarkMode(context);
 
     return const Scaffold(
-      body: Padding(
-        padding: TSpacingStyle.paddingWithAppBarHeight,
-        child: Column(
-          children: [
-            TLoginHeader(),
-            TLoginForm(),
-            TFormDivider(dividerText: TTexts.orSignInWith),
-            SizedBox(height: TSizes.spaceBtwSections),
-            TSocialButtons()
-          ],
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: TSpacingStyle.paddingWithAppBarHeight,
+          child: Column(
+            children: [
+              TLoginHeader(),
+              TLoginForm(),
+                TFormDivider(dividerText: TTexts.orSignInWith),
+                SizedBox(height: TSizes.spaceBtwSections),
+                TSocialButtons()
+            ],
+          ),
         ),
       ),
     );
