@@ -1,4 +1,3 @@
-
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
@@ -19,7 +18,9 @@ class TSocialButtons extends StatelessWidget {
       children: [
         Container(
           decoration: BoxDecoration(
-            color: dark ? TColors.light : TColors.grey,
+            border: Border.all(
+              color: dark ? TColors.light : TColors.grey,
+            ),
             borderRadius: BorderRadius.circular(100),
           ),
           child: IconButton(
@@ -38,7 +39,9 @@ class TSocialButtons extends StatelessWidget {
         ),
         Container(
           decoration: BoxDecoration(
-            color: dark ? TColors.light : TColors.grey,
+            border: Border.all(
+              color: dark ? TColors.light : TColors.grey,
+            ),
             borderRadius: BorderRadius.circular(100),
           ),
           child: IconButton(
