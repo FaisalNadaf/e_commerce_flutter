@@ -1,3 +1,5 @@
+import 'package:e_commerce/common/widgets/layouts/grid_layout.dart';
+import 'package:e_commerce/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:e_commerce/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:e_commerce/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:e_commerce/utils/constants/image_strings.dart';
@@ -51,16 +53,25 @@ class HomeScreen extends StatelessWidget {
 
             // Body
 
-            const Padding(
+            Padding(
               padding: EdgeInsets.all(TSizes.defaultSpace),
-              child: TPromoSlider(
-                banners: [
-                  TImages.promoBanner1,
-                  TImages.promoBanner2,
-                  TImages.promoBanner3,
+              child: Column(
+                children: [
+                  TPromoSlider(
+                    banners: [
+                      TImages.promoBanner1,
+                      TImages.promoBanner2,
+                      TImages.promoBanner3,
+                    ],
+                  ),
+                  const SizedBox(height: TSizes.spaceBtwSections),
+                  TGridLayout(
+                    itemCount: 8,
+                    itemBuilder: (_, index) => TProductCardVertical(),
+                  )
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),

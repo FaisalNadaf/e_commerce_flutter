@@ -20,18 +20,18 @@ class TPrimaryHeaderContainer extends StatelessWidget {
           height: 400,
           child: Stack(
             children: [
-              const Positioned(
+              Positioned(
                 top: -150,
                 right: -250,
                 child: TCircularContainer(
-                  color: TColors.textWhite,
+                  backgroundColor: TColors.white.withOpacity(0.1),
                 ),
               ),
-              const Positioned(
+              Positioned(
                 top: 100,
                 right: -300,
                 child: TCircularContainer(
-                  color: TColors.textWhite,
+                  backgroundColor: TColors.white.withOpacity(0.1),
                 ),
               ),
               child,
