@@ -14,7 +14,7 @@ class TRoundedImage extends StatelessWidget {
     this.height,
     this.width,
     this.border,
-    this.backgroundColor = TColors.light,
+    this.backgroundColor,
     this.fit = BoxFit.contain,
     this.padding,
     this.onPressed,
