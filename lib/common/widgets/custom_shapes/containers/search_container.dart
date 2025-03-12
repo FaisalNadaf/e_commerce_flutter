@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
 class TSearchContainer extends StatelessWidget {
-  TSearchContainer({
+  const TSearchContainer({
     super.key,
     required this.text,
     this.showBackground = true,
