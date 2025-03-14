@@ -9,8 +9,8 @@ import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/helpers/helper_functions.dart';
 
-class TBandCard extends StatelessWidget {
-  const TBandCard({
+class TBrandCard extends StatelessWidget {
+  const TBrandCard({
     super.key,
     this.showBorder = true,
   });
