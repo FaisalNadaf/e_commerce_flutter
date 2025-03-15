@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TSectionHeading extends StatelessWidget {
-  TSectionHeading({
+  const TSectionHeading({
     super.key,
     required this.title,
     this.buttonTitle = "View All",

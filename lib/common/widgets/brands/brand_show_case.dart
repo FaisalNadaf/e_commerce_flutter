@@ -17,11 +17,11 @@ class TBrandShowcase extends StatelessWidget {
       showBorder: true,
       borderColor: TColors.darkGrey,
       backgroundColor: Colors.transparent,
-      padding: EdgeInsets.all(TSizes.md),
-      margin: EdgeInsets.only(bottom: TSizes.spaceBtwItems),
+      padding: const EdgeInsets.all(TSizes.md),
+      margin: const EdgeInsets.only(bottom: TSizes.spaceBtwItems),
       child: Column(
         children: [
-          TBrandCard(
+          const TBrandCard(
             showBorder: false,
           ),
           const SizedBox(
@@ -41,12 +41,12 @@ class TBrandShowcase extends StatelessWidget {
     return Expanded(
       child: TRoundedContainer(
         height: 100,
-        padding: EdgeInsets.all(TSizes.md),
-        margin: EdgeInsets.only(right: TSizes.sm),
+        padding: const EdgeInsets.all(TSizes.md),
+        margin: const EdgeInsets.only(right: TSizes.sm),
         backgroundColor: THelperFunctions.isDarkMode(context)
             ? TColors.darkerGrey
             : TColors.white,
-        child: Image(
+        child: const Image(
           fit: BoxFit.contain,
           image: AssetImage(TImages.productImage10),
         ),

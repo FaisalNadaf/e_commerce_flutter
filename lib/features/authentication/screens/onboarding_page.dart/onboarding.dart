@@ -44,7 +44,7 @@ class Onboarding extends StatelessWidget {
 
           OnBoardingDotNavigation(),
 
-          OnBoardingNextButton(),
+          const OnBoardingNextButton(),
         ],
       ),
     );

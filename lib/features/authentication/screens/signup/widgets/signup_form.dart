@@ -1,4 +1,3 @@
-import 'package:e_commerce/features/authentication/screens/login/login.dart';
 import 'package:e_commerce/features/authentication/screens/signup/verifyEmail.dart';
 import 'package:e_commerce/features/authentication/screens/signup/widgets/terms_conditions.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';

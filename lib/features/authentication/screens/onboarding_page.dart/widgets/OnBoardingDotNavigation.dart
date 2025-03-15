@@ -12,6 +12,7 @@ class OnBoardingDotNavigation extends StatelessWidget {
   });
   @override
   final controller = OnboardingController.instance;
+  @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return Positioned(
