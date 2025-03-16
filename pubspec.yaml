@@ -52,7 +52,6 @@ dev_dependencies:
 
   flutter_lints: ^3.0.2
 
-  e_commerce_flutter: any
 flutter:
   uses-material-design: true
 

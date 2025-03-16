@@ -3,9 +3,11 @@ import 'package:e_commerce/common/widgets/custom_shapes/containers/primary_heade
 import 'package:e_commerce/common/widgets/list_tile/setting_menu_tile_.dart';
 import 'package:e_commerce/common/widgets/list_tile/user_profile_tile.dart';
 import 'package:e_commerce/common/widgets/texts/section_heading.dart';
+import 'package:e_commerce/features/personalization/screens/profile/profile.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SettingScreen extends StatelessWidget {
@@ -29,7 +31,11 @@ class SettingScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: TSizes.spaceBtwSections),
-                  const TUserProfileTile(),
+                  TUserProfileTile(
+                    onTap: () => Get.to(
+                      () => const ProfileScreen(),
+                    ),
+                  ),
                   const SizedBox(height: TSizes.spaceBtwSections),
                 ],
               ),
@@ -49,7 +55,9 @@ class SettingScreen extends StatelessWidget {
                     title: 'My Address',
                     subTitle: 'Set shopping delivery address',
                     icon: Iconsax.safe_home,
-                    onTap: () {},
+                    onTap: () => Get.to(
+                      () => const ProfileScreen(),
+                    ),
                   ),
                   TSettingMenuTile(
                     title: 'My Cart',

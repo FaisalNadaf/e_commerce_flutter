@@ -4,13 +4,12 @@ import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-
-
 class TUserProfileTile extends StatelessWidget {
   const TUserProfileTile({
     super.key,
+    this.onTap,
   });
-
+  final VoidCallback? onTap;
   @override
   Widget build(BuildContext context) {
     return ListTile(
@@ -33,7 +32,7 @@ class TUserProfileTile extends StatelessWidget {
             ),
       ),
       trailing: IconButton(
-        onPressed: () {},
+        onPressed: onTap,
         icon: const Icon(
           Iconsax.edit,
           color: TColors.white,
