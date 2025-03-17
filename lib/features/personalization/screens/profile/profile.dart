@@ -13,7 +13,7 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: TAppBar(
+      appBar: const TAppBar(
         showBackArrow: true,
         title: Text(
           'Profile',
@@ -21,7 +21,7 @@ class ProfileScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(
+          padding: const EdgeInsets.all(
             TSizes.defaultSpace,
           ),
           child: Column(
@@ -30,14 +30,14 @@ class ProfileScreen extends StatelessWidget {
                 width: double.infinity,
                 child: Column(
                   children: [
-                    TCircularImage(
+                    const TCircularImage(
                       imageUrl: TImages.user,
                       width: 80,
                       height: 80,
                     ),
                     TextButton(
                       onPressed: () {},
-                      child: Text(
+                      child: const Text(
                         'Change Profile Picture',
                       ),
                     ),
@@ -45,38 +45,38 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: TSizes.spaceBtwItems / 2),
-              Divider(),
+              const Divider(),
               const SizedBox(height: TSizes.spaceBtwItems),
-              TSectionHeading(
+              const TSectionHeading(
                 title: 'Profile Information',
                 showActionButton: false,
               ),
               const SizedBox(height: TSizes.spaceBtwItems),
-              TProfileMenu(title: 'Name', value: 'Code_faisal'),
-              TProfileMenu(title: 'Username', value: 'Coding with faisal'),
+              const TProfileMenu(title: 'Name', value: 'Code_faisal'),
+              const TProfileMenu(title: 'Username', value: 'Coding with faisal'),
               const SizedBox(height: TSizes.spaceBtwItems),
-              Divider(),
+              const Divider(),
               const SizedBox(height: TSizes.spaceBtwItems),
-              TSectionHeading(
+              const TSectionHeading(
                 title: 'Profile Information',
                 showActionButton: false,
               ),
               const SizedBox(height: TSizes.spaceBtwItems),
-              TProfileMenu(
+              const TProfileMenu(
                 title: 'User ID',
                 value: '2345790',
                 icon: Iconsax.copy,
               ),
-              TProfileMenu(title: 'E_mail', value: 'code@gmail.dev'),
-              TProfileMenu(title: 'Phone Number', value: '23790890235'),
-              TProfileMenu(title: 'Gender', value: 'Male'),
-              TProfileMenu(title: 'Date of Birth', value: '22 Feb, 2005'),
-              Divider(),
+              const TProfileMenu(title: 'E_mail', value: 'code@gmail.dev'),
+              const TProfileMenu(title: 'Phone Number', value: '23790890235'),
+              const TProfileMenu(title: 'Gender', value: 'Male'),
+              const TProfileMenu(title: 'Date of Birth', value: '22 Feb, 2005'),
+              const Divider(),
               const SizedBox(height: TSizes.spaceBtwItems),
               Center(
                 child: TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     'Close Account',
                     style: TextStyle(
                       color: Colors.red,

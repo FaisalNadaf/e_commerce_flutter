@@ -24,15 +24,11 @@ class TSettingMenuTile extends StatelessWidget {
       ),
       title: Text(
         title,
-        style: Theme.of(context).textTheme.headlineSmall!.apply(
-              color: TColors.white,
-            ),
+        style: Theme.of(context).textTheme.headlineSmall,
       ),
       subtitle: Text(
         subTitle,
-        style: Theme.of(context).textTheme.bodyMedium!.apply(
-              color: TColors.white,
-            ),
+        style: Theme.of(context).textTheme.bodyMedium,
       ),
       trailing: trailing,
     );
