@@ -1,4 +1,3 @@
-
 import 'package:e_commerce/common/widgets/appbar/appbar.dart';
 import 'package:e_commerce/common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
 import 'package:e_commerce/common/widgets/icons/t_circular_icon.dart';
@@ -9,7 +8,6 @@ import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-
 
 class TProductImageSlider extends StatelessWidget {
   const TProductImageSlider({
@@ -30,6 +28,11 @@ class TProductImageSlider extends StatelessWidget {
             child: Padding(
               padding: EdgeInsets.all(
                 TSizes.productImageRadius * 2,
+              ),
+              child: Center(
+                child: TRoundedImage(
+                  imageUrl: TImages.productImage6,
+                ),
               ),
             ),
           ),
