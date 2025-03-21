@@ -1,3 +1,4 @@
+import 'package:e_commerce/features/shop/screens/product_details/widgets/product_attribute.dart';
 import 'package:e_commerce/features/shop/screens/product_details/widgets/product_detail_image_slider.dart';
 import 'package:e_commerce/features/shop/screens/product_details/widgets/product_meta_data.dart';
 import 'package:e_commerce/features/shop/screens/product_details/widgets/product_rating_share.dart';
@@ -28,7 +29,20 @@ class ProductDetail extends StatelessWidget {
                 bottom: TSizes.defaultSpace,
               ),
               child: Column(
-                children: [TRatingAndShare(), TProductMetaData(),],
+                children: [
+                  // Rating  and share
+                  TRatingAndShare(),
+
+                  // price, title, Stock, and brand
+                  TProductMetaData(),
+
+                  // Attributes
+                  TProductAttributes(),
+
+                  // heckout button
+                  // Description
+                  // reviews
+                ],
               ),
             ),
           ],
