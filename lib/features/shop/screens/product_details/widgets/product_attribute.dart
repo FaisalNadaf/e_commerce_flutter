@@ -1,3 +1,4 @@
+import 'package:e_commerce/common/widgets/chips/choice_chip.dart';
 import 'package:e_commerce/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:e_commerce/common/widgets/texts/product_price_text.dart';
 import 'package:e_commerce/common/widgets/texts/product_title_text.dart';
@@ -90,8 +91,72 @@ class TProductAttributes extends StatelessWidget {
               SizedBox(
                 height: TSizes.spaceBtwItems / 2,
               ),
+              Wrap(
+                children: [
+                  TChoiceChip(
+                    text: 'Green',
+                    selected: false,
+                  ),
+                  TChoiceChip(
+                    text: 'Red',
+                    selected: true,
+                  ),
+                  TChoiceChip(
+                    text: 'Blue',
+                    selected: false,
+                  ),
+                  TChoiceChip(
+                    text: 'Green',
+                    selected: false,
+                  ),
+                  TChoiceChip(
+                    text: 'Red',
+                    selected: true,
+                  ),
+                  TChoiceChip(
+                    text: 'Blue',
+                    selected: false,
+                  ),
+                ],
+              ),
             ],
-          )
+          ),
+          const Column(
+            children: [
+              TSectionHeading(title: 'Sizes'),
+              SizedBox(
+                height: TSizes.spaceBtwItems / 2,
+              ),
+              Wrap(
+                children: [
+                  TChoiceChip(
+                    text: 'EU 34',
+                    selected: true,
+                  ),
+                  TChoiceChip(
+                    text: 'EU 36',
+                    selected: false,
+                  ),
+                  TChoiceChip(
+                    text: 'EU 40',
+                    selected: false,
+                  ),
+                  TChoiceChip(
+                    text: 'EU 34',
+                    selected: true,
+                  ),
+                  TChoiceChip(
+                    text: 'EU 36',
+                    selected: false,
+                  ),
+                  TChoiceChip(
+                    text: 'EU 40',
+                    selected: false,
+                  ),
+                ],
+              )
+            ],
+          ),
         ],
       ),
     );
