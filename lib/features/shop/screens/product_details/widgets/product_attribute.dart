@@ -29,7 +29,7 @@ class TProductAttributes extends StatelessWidget {
                 Row(
                   children: [
                     const TSectionHeading(
-                      title: 'Variationsdsd',
+                      title: 'Variations',
                       showActionButton: false,
                     ),
                     const SizedBox(
@@ -86,25 +86,17 @@ class TProductAttributes extends StatelessWidget {
 
           // attributes
           const Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              TSectionHeading(title: 'Colors'),
+              TSectionHeading(
+                title: 'Colors',
+                showActionButton: false,
+              ),
               SizedBox(
                 height: TSizes.spaceBtwItems / 2,
               ),
               Wrap(
                 children: [
-                  TChoiceChip(
-                    text: 'Green',
-                    selected: false,
-                  ),
-                  TChoiceChip(
-                    text: 'Red',
-                    selected: true,
-                  ),
-                  TChoiceChip(
-                    text: 'Blue',
-                    selected: false,
-                  ),
                   TChoiceChip(
                     text: 'Green',
                     selected: false,
@@ -122,12 +114,17 @@ class TProductAttributes extends StatelessWidget {
             ],
           ),
           const Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              TSectionHeading(title: 'Sizes'),
+              TSectionHeading(
+                title: 'Sizes',
+                showActionButton: false,
+              ),
               SizedBox(
                 height: TSizes.spaceBtwItems / 2,
               ),
               Wrap(
+                spacing: 8,
                 children: [
                   TChoiceChip(
                     text: 'EU 34',
@@ -141,20 +138,8 @@ class TProductAttributes extends StatelessWidget {
                     text: 'EU 40',
                     selected: false,
                   ),
-                  TChoiceChip(
-                    text: 'EU 34',
-                    selected: true,
-                  ),
-                  TChoiceChip(
-                    text: 'EU 36',
-                    selected: false,
-                  ),
-                  TChoiceChip(
-                    text: 'EU 40',
-                    selected: false,
-                  ),
                 ],
-              )
+              ),
             ],
           ),
         ],
