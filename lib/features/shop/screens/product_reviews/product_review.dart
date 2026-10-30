@@ -25,7 +25,6 @@ class TProductReviewScreen extends StatelessWidget {
             children: [
               Text('Rating and review and are from peoplw who use the same type of accorices that you wanyt to use ', ),
               SizedBox(height: TSizes.spaceBtwItems),
-              
             ],
           ),
         ),
